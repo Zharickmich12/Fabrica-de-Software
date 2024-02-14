@@ -27,7 +27,7 @@ body {
 }
 
 .header {
-    position: fixed;
+    position:absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -130,6 +130,7 @@ section {
 .home-content p {
     font-size: 1.6rem;
     color: var(--white-color);
+    text-align: left;
 }
 
 .btn-home {
@@ -149,5 +150,67 @@ section {
 
 .btn-home:hover {
     background-color: var(--white-color);
+    color: var(--text-color);
+}
+
+.services-content {
+    min-height: auto;
+    padding-bottom: 7rem;
+    background-color: #F3F8FF;
+}
+
+.services-content h2 {
+    margin-bottom: 3rem;
+    font-size: 3.8rem;
+    color: var(--main-color);
+    text-align: center;
+}
+
+#p1 {
+    margin-bottom: 5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    text-align: center;
+    margin-left: 45rem;
+    margin-right: 45rem;
+}
+
+.services-content .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.services-container .services-box {
+    background: var(--bg-color);
+    padding: 3.5rem;
+    width: 35rem; 
+    height: 35rem;
+    align-items: left;
+    transition: .1s ease;
+}
+
+.services-container .services-box:hover {
+    transform: scale(1.02);
+}
+
+.services-box i {
+    display: flex;
+    margin-bottom: 2.5rem;
+    font-size: 5rem;
+    color: var(--blue-color);
+}
+
+.services-box h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--main-color);
+}
+
+.services-box p {
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
     color: var(--text-color);
 }
