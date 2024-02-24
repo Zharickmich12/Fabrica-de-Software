@@ -14,6 +14,7 @@
     --main-color: #070F2B;
     --white-color: #fdfdfd;
     --blue-color: #535C91;
+    --shadow-color: #EEEDEB;
 }
 
 html {
@@ -25,6 +26,8 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
 }
+
+/*header*/
 
 header {
     position:absolute;
@@ -108,6 +111,8 @@ section {
     padding: 10rem 7% 2rem;
 }
 
+/*seccion de inicio*/
+
 .home { 
     background-image: url('./images/home.jpg');
     background-size: cover;
@@ -163,6 +168,8 @@ section {
     background-color: var(--white-color);
     color: var(--text-color);
 }
+
+/*seccion de servicios*/
 
 .services-content {
     min-height: auto;
@@ -226,6 +233,8 @@ section {
     color: var(--text-color);
 }
 
+/*seccion de portafolio*/
+
 .portfolio {
     padding-bottom: 100rem;
     padding-top: 8rem;
@@ -276,21 +285,7 @@ section {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.customers-container h2 {
-    font-size: 3.8rem;
-    color: var(--main-color);
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.customers-container p {
-    margin-bottom: 5rem;
-    font-size: 1.6rem;
-    color: var(--text-color);
-    text-align: center;
-    margin-left: 45rem;
-    margin-right: 45rem;
-}
+/*clientes*/
 
 .portfolio .customers-container {
     display: flex;
@@ -299,18 +294,16 @@ section {
     align-items: center;
     margin-top: 25rem;
 }
-
-.portfolio .team-container {
-    display: flex;
-    margin-top: 25rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+  
+.customers-container h2 {
+    font-size: 3.8rem;
+    color: var(--main-color);
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
-.team-container p {
-    margin-bottom: 5rem;
+.customers-container p {
+    margin-bottom: 8rem;
     font-size: 1.6rem;
     color: var(--text-color);
     text-align: center;
@@ -318,43 +311,82 @@ section {
     margin-right: 45rem;
 }
 
-.team-container .team-boxes{
-    position: relative;
-    overflow: hidden;
-    width: 30rem; 
-    height: 30rem;
-    align-items: center;
-    margin-top: 2rem;
+.logos-table {
+    border-spacing: 0; 
+    border-top: 1px solid var(--shadow-color);
+    border-collapse: collapse;
+}
+  
+.customers-logo {
+    padding: 3rem; 
+    text-align: center;
+    border-right: 1px solid var(--shadow-color);
+}
+  
+.customers-logo img {
+    height: auto;
+    width: 20rem;
 }
 
-.team-container .team-box {
-    position: relative;
-    overflow: hidden;
-    width: 30rem; 
-    height: 30rem;
-    align-items: center;
-    margin-top: 2rem;
+.customers-logo:last-child {
+    border-right: none; 
 }
 
-.team-boxes .team-box img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+/*equipo*/
+
+.portfolio .team-container {
+    text-align: center;
+    margin-top: 13rem;
 }
 
-
-.team-boxes.team-box h3{
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+.team-container h2 {
+    margin-bottom: 3rem;
+    font-size: 3.8rem;
     color: var(--main-color);
 }
 
-.team-boxes .team-box p{
-    margin-bottom: 3rem;
-    font-size: 1.5rem;
+.team-container p {
+    font-size: 1.6rem;
     color: var(--text-color);
+    margin-bottom: 8rem;
+    margin-left: 45rem;
+    margin-right: 45rem;
 }
 
+.team-container .team-boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 2rem;
+}
+
+.team-container .team-box {
+    align-items: center;
+    text-align: center;
+}
+
+.team-container .team-box img {
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+    margin-bottom: 3rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.team-container .team-box h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--main-color);
+}
+
+.team-container .team-box p .team-description {
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    text-align: center; 
+    white-space: nowrap;
+}
 
 /*footer*/
 footer {
@@ -367,9 +399,11 @@ footer {
 
 .footer-container {
     display: flex;
-    justify-content: space-between; 
-    margin-left: 40rem;
-    margin-right: 40rem;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .footer-section1,
@@ -392,32 +426,32 @@ footer {
 
 .footer-section1 i {
     font-size: 2rem;
-    color: #C7C8CC;
+    color: var(--shadow-color);
     margin-right: 0.5rem;
 }
 
 .footer-section2 {
     display: flex;
-    flex-direction: row; 
-    justify-content: space-between; 
+    flex-direction: row;
+    gap: 2rem;  
 }
 
 .footer-information {
     text-align: left;
-}
+    
+}   
 
 .footer-information h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
-    display: block;
 }
 
 .footer-information a {
     text-decoration: none;
     color: var(--white-color);
-    display: block;
     margin-bottom: 1rem;
     font-size: 1.5rem;
+    display: block;
 }
 
 .footer-divider {
