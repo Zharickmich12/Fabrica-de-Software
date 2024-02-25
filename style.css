@@ -15,6 +15,7 @@
     --white-color: #fdfdfd;
     --blue-color: #535C91;
     --shadow-color: #EEEDEB;
+    --grey-color: #B4B4B8;
 }
 
 html {
@@ -541,7 +542,8 @@ footer {
 /*about*/
 .about {
     position: relative;
-    background: var(--bg-color); 
+    background: #F3F8FF;
+
 }
 
 .about::before {
@@ -550,7 +552,7 @@ footer {
     top: 0;
     left: 0;
     width: 100%;
-    height: 55%; 
+    height: 32%; 
     background: url('/images/about.jpg') center/cover no-repeat; 
 }
 
@@ -591,6 +593,7 @@ footer {
     position: relative;
     margin-left: 25rem;
     margin-right: 25rem;
+    margin-bottom: 10rem;
     z-index: 1; 
 }
 
@@ -601,7 +604,7 @@ footer {
     height: 32rem;
     margin-top: -3rem;
     align-items: center;
-    box-shadow: 0 15px 15px -7px #B4B4B8;
+    box-shadow: 0 15px 15px -7px var(--grey-color);
     transition: .1s ease;
 }
 
@@ -630,4 +633,141 @@ footer {
     font-size: 1.6rem;
     margin-bottom: 2rem; 
     color: var(--text-color);
+}
+
+/*proceso de trabajo*/
+.work-process-content {
+    text-align: center;
+    margin-top: 10rem;
+    background-color: #F3F8FF;
+    margin-bottom: 8rem;
+}
+
+.work-process-content h1 {
+    margin-bottom: 2rem; 
+    font-size: 3.8rem;
+    color: var(--main-color);
+}
+
+.work-process-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 25rem;
+    margin-right: 25rem;
+}
+
+.work-process-box {
+    width: 35rem;
+    height: 35rem;
+    padding: 2rem;
+    border: none;
+    box-sizing: border-box;
+    text-align: left;
+
+}
+
+.work-process-box h1 {
+    font-size: 10rem; 
+    color: #DDE6ED;
+    margin-right: 1rem;
+}
+
+.work-process-box h3 {
+    font-size: 2rem;
+    margin-bottom: 1.8rem;
+    margin-top: 0.1rem;
+}
+
+.work-process-box p {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin: 0;
+}
+
+/*¿Porqué escogernos?*/
+.two-column-section {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+}
+
+.left-column {
+    width: 50%;
+    float: left;
+}
+
+.left-column img {
+    width: 95rem;
+    height: auto;
+    float: left;
+}
+
+.right-column {
+    width: 50%;
+    float: right;
+}
+
+.content-right {
+    margin-top: 5rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
+
+.content-right h1 {
+    margin-bottom: 2rem; 
+    font-size: 3rem;
+    color: var(--main-color);
+} 
+
+.content-right p {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin-bottom: 3rem;
+}
+
+.accordion {
+    width: 75rem;
+}
+
+.accordion .accordion-section {
+    position: relative;
+    border: none;
+    background-color: #F3F8FF;
+}
+
+.accordion .accordion-section .row {
+    position: relative;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.accordion .accordion-section .row::before {
+    content: '+';
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+
+.accordion .accordion-section.active .row::before {
+    content: '-';
+}
+
+.accordion .accordion-section .accordion-content {
+    position: relative;
+    padding: 1rem;
+    background-color: #F3F8FF; /* Cambiado para que coincida con el fondo del encabezado */
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+
+.accordion .accordion-section.active .accordion-content {
+    height: 8rem;
+    padding: 8rem;
 }
