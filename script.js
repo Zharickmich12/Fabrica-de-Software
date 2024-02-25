@@ -9,16 +9,33 @@ ScrollReveal({
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 
 /*=== accordion ===*/
-const accordionSections = document.querySelectorAll('.accordion-section');
+var coll = document.getElementsByClassName("accordion");
+var i;
 
-accordionSections.forEach(section => {
-    section.addEventListener('click', function () {
-        this.classList.toggle('active');
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
 
-        accordionSections.forEach(otherSection => {
-            if (otherSection !== this && otherSection.classList.contains('active')) {
-                otherSection.classList.remove('active');
-            }
-        });
-    });
-});
+/*=== contador ===*/
+function contarNumeros(elemento, limite) {
+    let contador = 0;
+    const intervalo = setInterval(() => {
+      contador++;
+      elemento.textContent = contador;
+      if (contador === limite) {
+        clearInterval(intervalo);
+      }
+    }, 10);
+  }
+
+  contarNumeros(document.getElementById("contador-1"), 50);
+  contarNumeros(document.getElementById("contador-2"), 50);
+  contarNumeros(document.getElementById("contador-3"), 100);
