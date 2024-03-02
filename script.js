@@ -8,34 +8,16 @@ ScrollReveal({
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 
-/*=== accordion ===*/
-var coll = document.getElementsByClassName("accordion");
-var i;
+/*===drowpdown menu===*/
+const toggleBtn = document.querySelector('.toggle_btn')
+const toggleBtnIcon = document.querySelector('.toggle_btn i')
+const dropDownMenu = document.querySelector('.dropdown-menu')
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
+toggleBtn.onclick = function () {
+  dropDownMenu.classList.toggle('open')
+  const isOpen = dropDownMenu.classList.contains('open')
+
+  toggleBtnIcon.classList = isOpen
+  ? 'bx bx-window-close'
+  : 'bx bx-menu'
 }
-
-/*=== contador ===*/
-function contarNumeros(elemento, limite) {
-    let contador = 0;
-    const intervalo = setInterval(() => {
-      contador++;
-      elemento.textContent = contador;
-      if (contador === limite) {
-        clearInterval(intervalo);
-      }
-    }, 10);
-  }
-
-  contarNumeros(document.getElementById("contador-1"), 50);
-  contarNumeros(document.getElementById("contador-2"), 50);
-  contarNumeros(document.getElementById("contador-3"), 100);
