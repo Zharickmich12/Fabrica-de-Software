@@ -1,23 +1,10 @@
-/*=== scroll reveal ===*/
-ScrollReveal({
-    reset: true,
-    distance: '80px',
-    duration: 2000,
-    delay: 200
-});
+//===menu===//
+let navbar = document.querySelector('.navbar');
 
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+document.querySelector('#menu-btn').onclick = () =>{
+  navbar.classList.toggle('active')
+}
 
-/*===drowpdown menu===*/
-const toggleBtn = document.querySelector('.toggle_btn')
-const toggleBtnIcon = document.querySelector('.toggle_btn i')
-const dropDownMenu = document.querySelector('.dropdown-menu')
-
-toggleBtn.onclick = function () {
-  dropDownMenu.classList.toggle('open')
-  const isOpen = dropDownMenu.classList.contains('open')
-
-  toggleBtnIcon.classList = isOpen
-  ? 'bx bx-window-close'
-  : 'bx bx-menu'
+window.onscroll = () =>{
+  navbar.classList.remove('active');
 }
