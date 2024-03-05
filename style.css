@@ -54,20 +54,25 @@ section {
    justify-content: space-between;
    padding: 1.5rem 7%;
    border-bottom: var(--blue-color);
-   position: fixed; /*fix*/
+   position: absolute; /*fix*/
    top: 0; left: 0; right: 0;
    z-index: 1000; 
 }
 
+.header .logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .header .logo img {
-    height: 10rem;
+    width: 15rem;
+    height: 13rem;
 }
 
 .header .logo h2 {
-    margin-top: 1rem;
-    display: inline;
-    margin: 0 2rem;
-    font-size: 1.6rem;
+    margin: 0 1rem;
+    font-size: 2.3rem;
     color: var(--white-color);
 }
 
@@ -102,6 +107,16 @@ section {
     background-color: var(--bg-color);
 }
 
+#menu-btn {
+    color: var(--white-color);
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 1rem;
+    background-color: var(--blue-color);
+    display: none;
+    padding: 0.5rem 1rem;
+}
+
 /*seccion de inicio*/
 .home {
     min-height: 100vh;
@@ -114,6 +129,7 @@ section {
 
 .home .home-content {
     max-width: 60rem;
+    margin-left: 15rem;
 }
 
 .home .home-content h3 {
@@ -375,8 +391,8 @@ footer {
     justify-content:space-around;
     background-color: var(--blue-color);
     color: var(--white-color);
-    padding: 3rem;
-    padding-top: 8rem;
+    padding: 2rem;
+    padding-top: 6rem;
 }
 
 .footer-container {
@@ -384,13 +400,13 @@ footer {
     flex-wrap: wrap;
     justify-content: center; 
     gap: 2rem;
-    margin-right: 20rem;
+    margin-right: 15rem;
 }
 
 .footer-section1,
 .footer-section2 {
     width: 100%; 
-    max-width: 45rem; 
+    max-width: 40rem; 
     text-align: left;
 }
 
@@ -402,8 +418,7 @@ footer {
 }
 
 .footer-section1 img {
-    width: 10rem;
-    height: 10rem;
+    width: 15rem;
     margin-bottom: 3rem;
 }
 
@@ -452,19 +467,18 @@ footer {
 }
 
 .footer-divider {
-    width: 60%;
+    width: 100%;
     border-top: 1px solid #B4B4B8;
     margin-top: 5rem;
     padding-top: 3rem;
-    margin-left: 35rem;
-    margin-right: 25rem;
+    align-items: center;
 }
 
-#p2 {
+#col {
+    display: flex;
+    justify-content: center;
     font-size: 1.5rem;
     color: var(--white-color);
-    text-align: left;
-    margin-left: 36rem;
 }
 
 .footer-bottom {
@@ -476,7 +490,23 @@ footer {
 
 
 
+
 /*media queries*/
+@media (max-width:1351px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1rem 8rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+}
+
 @media (max-width:991px){
 
     html{
@@ -484,7 +514,7 @@ footer {
     }
 
     .header {
-        padding: 1.5rem 2 rem;
+        padding: 1rem 0.5rem;
     }
 
     section {
@@ -503,12 +533,13 @@ footer {
         top: 100%; right: -100%;
         background: var(--bg-color);
         background: 30rem;
-        width: 30rem;
-        height: calc(100vh - 9.5rem);
+        width: 100%;
+        height: calc(100vh - 60rem);
     }
 
     .header .navbar.active {
         right: 0;
+        background: var(--bg-color);
     }
 
     .header .navbar a {
