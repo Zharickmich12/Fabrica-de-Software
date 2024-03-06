@@ -54,7 +54,7 @@ section {
    justify-content: space-between;
    padding: 1.5rem 7%;
    border-bottom: var(--blue-color);
-   position: absolute; /*fix*/
+   position: absolute; 
    top: 0; left: 0; right: 0;
    z-index: 1000; 
 }
@@ -66,8 +66,9 @@ section {
 }
 
 .header .logo img {
-    width: 15rem;
-    height: 13rem;
+    width: 100%;
+    max-width: 18rem;
+    height: auto;
 }
 
 .header .logo h2 {
@@ -110,11 +111,11 @@ section {
 #menu-btn {
     color: var(--white-color);
     cursor: pointer;
-    font-size: 2.5rem;
-    margin-left: 1rem;
+    font-size: 3rem;
+    margin-right: 3rem;
     background-color: var(--blue-color);
     display: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
 }
 
 /*seccion de inicio*/
@@ -418,7 +419,8 @@ footer {
 }
 
 .footer-section1 img {
-    width: 15rem;
+    width: 18rem;
+    height: 15rem;
     margin-bottom: 3rem;
 }
 
@@ -507,6 +509,109 @@ footer {
     }
 }
 
+@media (max-width:1178px){
+
+    html{
+        font-size: 52%;
+    }
+
+    .header {
+        padding: 1rem 5rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width:1023px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1rem 0.5rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    #menu-btn {
+        display: inline-block;
+        font-size: 3.5rem;
+    }
+
+    #menu-icon {
+        font-size: 4rem;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 66%; right: -100%;
+        background: var(--bg-color);
+        width: 83%;
+        height: calc(100vh - 68rem);
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        transition: right 0.3s ease;
+    }
+
+    .header .navbar.active {
+        right: 0;
+        background: var(--bg-color);
+    }
+
+    .header .navbar a {
+        color: var(--text-color);
+        display: block;
+        margin: 0.4rem;
+        padding: .5rem;
+        font-size: 1.8rem;
+        margin-left: 2%;
+        border-bottom: 1px solid var(--text-color);
+    }
+
+    .header .navbar a:hover {
+        color: var(--blue-color);
+        border-bottom-color: var(--blue-color); 
+    }
+
+    .header #header-btn {
+        color: var(--text-color);
+        display: block;
+        margin: 0.4rem;
+        padding: .5rem;
+        font-size: 1.8rem;
+        background-color: var(--bg-color);
+        text-transform: lowercase;
+        margin-left: 2%;
+        border-bottom: none; 
+    }
+
+    .header #header-btn:first-letter {
+        text-transform: uppercase;
+    }
+
+    .header #header-btn:hover {
+        color: var(--blue-color);
+    }
+
+
+    .home {
+        min-height: 70vh;
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .home-content {
+        margin-left: 0;
+    }
+}
+
 @media (max-width:991px){
 
     html{
@@ -519,6 +624,42 @@ footer {
 
     section {
         padding: 2rem;
+    }
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%; right: -100%;
+        background: var(--bg-color);
+        background: 30rem;
+        width: 100%;
+        height: calc(100vh - 60rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.3s ease;
+    }
+
+    .header .navbar.active {
+        right: 0;
+        background: var(--bg-color);
+    }
+
+    .header .navbar a {
+        color: var(--text-color);
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+
+    .home {
+        background-position: left;
+        justify-content: center;
+        text-align: center;
     }
 }
 
@@ -535,6 +676,10 @@ footer {
         background: 30rem;
         width: 100%;
         height: calc(100vh - 60rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.3s ease;
     }
 
     .header .navbar.active {
