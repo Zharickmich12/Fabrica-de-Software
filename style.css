@@ -195,6 +195,8 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
+    margin-left: 25rem;
+    margin-right: 25rem;
 }
 
 
@@ -507,6 +509,11 @@ footer {
     section {
         padding: 2rem;
     }
+
+    .services .box-container {
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
 }
 
 @media (max-width:1178px){
@@ -521,6 +528,11 @@ footer {
 
     section {
         padding: 2rem;
+    }
+
+    .services .box-container {
+        margin-left: 10rem;
+        margin-right: 10rem;
     }
 }
 
@@ -609,6 +621,11 @@ footer {
 
     .home .home-content {
         margin-left: 0;
+    }
+
+    .services .box-container {
+        margin-left: 5rem;
+        margin-right: 5rem;
     }
 }
 
@@ -774,6 +791,12 @@ footer {
         justify-content: center;
         text-align: center;
     }
+
+    .services .box-container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
 }
 
 @media (max-width:450px){
@@ -849,6 +872,7 @@ footer {
     .header #header-btn:hover {
         color: var(--blue-color);
     }
+    
 }
 
 
