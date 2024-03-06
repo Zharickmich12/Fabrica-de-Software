@@ -628,18 +628,22 @@ footer {
 
     #menu-btn {
         display: inline-block;
+        font-size: 3rem;
+    }
+
+    #menu-icon {
+        font-size: 3rem;
     }
 
     .header .navbar {
         position: absolute;
-        top: 100%; right: -100%;
+        top: 66%; right: -100%;
         background: var(--bg-color);
-        background: 30rem;
-        width: 100%;
-        height: calc(100vh - 60rem);
+        width: 85%;
+        height: calc(100vh - 68rem);
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: left;
         transition: right 0.3s ease;
     }
 
@@ -648,12 +652,45 @@ footer {
         background: var(--bg-color);
     }
 
+    .header .logo img {
+        width: 100%;
+        max-width: 15rem;
+        height: auto;
+    }
+
     .header .navbar a {
         color: var(--text-color);
         display: block;
-        margin: 1.5rem;
+        margin: 0.4rem;
         padding: .5rem;
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-left: 2%;
+        border-bottom: 1px solid var(--text-color);
+    }
+
+    .header .navbar a:hover {
+        color: var(--blue-color);
+        border-bottom-color: var(--blue-color); 
+    }
+
+    .header #header-btn {
+        color: var(--text-color);
+        display: block;
+        margin: 0.4rem;
+        padding: .5rem;
+        font-size: 1.8rem;
+        background-color: var(--bg-color);
+        text-transform: lowercase;
+        margin-left: 2%;
+        border-bottom: none; 
+    }
+
+    .header #header-btn:first-letter {
+        text-transform: uppercase;
+    }
+
+    .header #header-btn:hover {
+        color: var(--blue-color);
     }
 
     .home {
@@ -667,18 +704,22 @@ footer {
 
     #menu-btn {
         display: inline-block;
+        font-size: 3rem;
+    }
+
+    #menu-icon {
+        font-size: 3rem;
     }
 
     .header .navbar {
         position: absolute;
-        top: 100%; right: -100%;
+        top: 75%; right: -100%;
         background: var(--bg-color);
-        background: 30rem;
-        width: 100%;
-        height: calc(100vh - 60rem);
+        width: 87%;
+        height: calc(100vh - 68rem);
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: left;
         transition: right 0.3s ease;
     }
 
@@ -687,12 +728,45 @@ footer {
         background: var(--bg-color);
     }
 
+    .header .logo img {
+        width: 100%;
+        max-width: 10rem;
+        height: auto;
+    }    
+
     .header .navbar a {
         color: var(--text-color);
         display: block;
-        margin: 1.5rem;
+        margin: 0.4rem;
         padding: .5rem;
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-left: 2%;
+        border-bottom: 1px solid var(--text-color);
+    }
+
+    .header .navbar a:hover {
+        color: var(--blue-color);
+        border-bottom-color: var(--blue-color); 
+    }
+
+    .header #header-btn {
+        color: var(--text-color);
+        display: block;
+        margin: 0.4rem;
+        padding: .5rem;
+        font-size: 1.8rem;
+        background-color: var(--bg-color);
+        text-transform: lowercase;
+        margin-left: 2%;
+        border-bottom: none; 
+    }
+
+    .header #header-btn:first-letter {
+        text-transform: uppercase;
+    }
+
+    .header #header-btn:hover {
+        color: var(--blue-color);
     }
 
     .home {
@@ -706,6 +780,74 @@ footer {
 
     html{
         font-size: 50%;
+    }
+
+    #menu-btn {
+        display: inline-block;
+        font-size: 2rem;
+    }
+
+    #menu-icon {
+        font-size: 2rem;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 70%; right: -100%;
+        background: var(--bg-color);
+        width: 100%;
+        height: calc(100vh - 80rem);
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        transition: right 0.3s ease;
+    }
+
+    .header .navbar.active {
+        right: 0;
+        background: var(--bg-color);
+    }
+
+    .header .logo img {
+        width: 100%;
+        max-width: 10rem;
+        margin-bottom: 2rem;
+        height: auto;
+    }    
+
+    .header .navbar a {
+        color: var(--text-color);
+        display: block;
+        margin: 0.4rem;
+        padding: .5rem;
+        font-size: 1.8rem;
+        margin-left: 2%;
+        border-bottom: 1px solid var(--text-color);
+    }
+
+    .header .navbar a:hover {
+        color: var(--blue-color);
+        border-bottom-color: var(--blue-color); 
+    }
+
+    .header #header-btn {
+        color: var(--text-color);
+        display: block;
+        margin: 0.4rem;
+        padding: .5rem;
+        font-size: 1.8rem;
+        background-color: var(--bg-color);
+        text-transform: lowercase;
+        margin-left: 2%;
+        border-bottom: none; 
+    }
+
+    .header #header-btn:first-letter {
+        text-transform: uppercase;
+    }
+
+    .header #header-btn:hover {
+        color: var(--blue-color);
     }
 }
 
