@@ -1,4 +1,4 @@
-//===menu===//
+//=== menu ===//
 let navbar = document.querySelector('.navbar');
 let menuBtn = document.querySelector('#menu-btn');
 let menuIcon = document.querySelector('#menu-icon');
