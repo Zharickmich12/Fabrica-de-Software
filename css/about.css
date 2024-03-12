@@ -131,12 +131,12 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    height: 32%; 
+    height: 28%; 
     background: url('/images/about.jpg') center/cover no-repeat; 
 }
 
 .about-titles {
-    margin-top: 3rem;
+    margin-top: 12rem;
     text-align: center;
     padding: 50px 0; 
     position: relative;
@@ -167,24 +167,24 @@ section {
 
 .about-container {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
     position: relative;
-    margin-left: 25rem;
-    margin-right: 25rem;
     margin-bottom: 10rem;
-    z-index: 1; 
+    margin-left: 15rem;
+    margin-right: 15rem;
 }
 
 .about-content {
-    background: var(--bg-color);
+    flex: 1;
     padding: 3rem;
-    width: 35rem; 
-    height: 32rem;
-    margin-top: -3rem;
+    background: var(--bg-color);
     align-items: center;
     box-shadow: 0 15px 15px -7px var(--grey-color);
     transition: .1s ease;
+    width: 30rem; 
+    height: 32rem;
 }
 
 .line {
@@ -197,22 +197,166 @@ section {
 
 .about-content h2 {
     font-size: 2.8rem;
-    margin-bottom: 2rem; 
+    margin-bottom: 1.5rem; 
     color: var(--main-color);
 }
 
 .about-content p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-bottom: 2rem; 
     color: var(--text-color);
 }
 
 .about-content ul {
     list-style-type: none;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-bottom: 2rem; 
     color: var(--text-color);
 }
+
+/*proceso de trabajo*/
+.work-process-content {
+    text-align: center;
+    margin-top: 10rem;
+    background-color: #F3F8FF;
+    margin-bottom: 8rem;
+}
+
+.work-process-content h1 {
+    margin-bottom: 2rem; 
+    font-size: 3.8rem;
+    color: var(--main-color);
+}
+
+.work-process-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 25rem;
+    margin-right: 25rem;
+}
+
+.work-process-box {
+    width: 35rem;
+    height: 35rem;
+    padding: 2rem;
+    border: none;
+    box-sizing: border-box;
+    text-align: left;
+
+}
+
+.work-process-box h1 {
+    font-size: 10rem; 
+    color: #DDE6ED;
+    margin: 0;
+    margin-right: 1rem;
+    padding: 0;
+}
+
+.work-process-box h3 {
+    font-size: 2rem;
+    margin-bottom: 1.8rem;
+}
+
+.work-process-box p {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin: 0;
+}
+
+
+/*¿Porqué escogernos?*/
+.last-section {
+    text-align: center;
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+.two-column-section {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 10rem;
+}
+
+.left-column {
+    width: 50%;
+    float: left;
+}
+
+.left-column img {
+    width: 95rem;
+    height: auto;
+    float: left;
+}
+
+.right-column {
+    width: 50%;
+    float: right;
+}
+
+.content-right {
+    margin-top: 5rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    text-align: left;
+}
+
+.content-right h1 {
+    margin-bottom: 2rem; 
+    font-size: 3rem;
+    color: var(--main-color);
+} 
+
+.content-right p {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 3rem;
+}
+
+/*accordion*/
+.accordion {
+    background-color: #F3F8FF;
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 2rem;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 1.5rem;
+  }
+
+.accordion.active, .accordion:hover {
+    background-color: var(--bg-color);
+}
+
+.active:after {
+    content: "\2796"; 
+}
+
+  .panel {
+    padding: 0 2rem;
+    background-color: #F3F8FF;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .accordion:after {
+    content: '\02795'; 
+    font-size: 1.5rem;
+    color: var(--text-color);
+    float: right;
+    margin-left: 3rem;
+  }
+  
+  .active:after {
+    content: "\2796"; 
+  }
 
 
  /*mas informacion*/
@@ -365,4 +509,446 @@ footer {
 
 .footer-bottom {
   width: 100%;
+}
+
+/*media queries*/
+@media (max-width:1351px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1rem 8rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width:1178px){
+
+    html{
+        font-size: 52%;
+    }
+
+    .header {
+        padding: 1rem 5rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width:1058px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .header {
+        padding: 1rem 5rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .about-container {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}
+
+@media (max-width:1023px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1rem 0.5rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    #menu-btn {
+        display: inline-block;
+        font-size: 3.5rem;
+    }
+
+    #menu-icon {
+        font-size: 4rem;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 66%; right: -100%;
+        background: var(--bg-color);
+        width: 83%;
+        height: calc(100vh - 68rem);
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        transition: right 0.3s ease;
+    }
+
+    .header .navbar.active {
+        right: 0;
+        background: var(--bg-color);
+    }
+
+    .header .navbar a {
+        color: var(--text-color);
+        display: block;
+        margin: 0.4rem;
+        padding: .5rem;
+        font-size: 1.8rem;
+        margin-left: 2%;
+        border-bottom: 1px solid var(--text-color);
+    }
+
+    .header .navbar a:hover {
+        color: var(--blue-color);
+        border-bottom-color: var(--blue-color); 
+    }
+
+    .header #header-btn {
+        color: var(--text-color);
+        display: block;
+        margin: 0.4rem;
+        padding: .5rem;
+        font-size: 1.8rem;
+        background-color: var(--bg-color);
+        text-transform: lowercase;
+        margin-left: 2%;
+        border-bottom: none; 
+    }
+
+    .header #header-btn:first-letter {
+        text-transform: uppercase;
+    }
+
+    .header #header-btn:hover {
+        color: var(--blue-color);
+    }
+
+    .about-container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1rem 0.5rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    #menu-btn {
+        display: inline-block;
+        font-size: 3rem;
+    }
+
+    #menu-icon {
+        font-size: 3rem;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 66%; right: -100%;
+        background: var(--bg-color);
+        width: 85%;
+        height: calc(100vh - 68rem);
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        transition: right 0.3s ease;
+    }
+
+    .header .navbar.active {
+        right: 0;
+        background: var(--bg-color);
+    }
+
+    .header .logo img {
+        width: 100%;
+        max-width: 15rem;
+        height: auto;
+    }
+
+    .header .navbar a {
+        color: var(--text-color);
+        display: block;
+        margin: 0.4rem;
+        padding: .5rem;
+        font-size: 1.8rem;
+        margin-left: 2%;
+        border-bottom: 1px solid var(--text-color);
+    }
+
+    .header .navbar a:hover {
+        color: var(--blue-color);
+        border-bottom-color: var(--blue-color); 
+    }
+
+    .header #header-btn {
+        color: var(--text-color);
+        display: block;
+        margin: 0.4rem;
+        padding: .5rem;
+        font-size: 1.8rem;
+        background-color: var(--bg-color);
+        text-transform: lowercase;
+        margin-left: 2%;
+        border-bottom: none; 
+    }
+
+    .header #header-btn:first-letter {
+        text-transform: uppercase;
+    }
+
+    .header #header-btn:hover {
+        color: var(--blue-color);
+    }
+
+    .about::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 40%; 
+        background: url('/images/about.jpg') center/cover no-repeat; 
+    }
+
+    .about-container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 768px){
+
+    #menu-btn {
+        display: inline-block;
+        font-size: 3rem;
+    }
+
+    #menu-icon {
+        font-size: 3rem;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 75%; right: -100%;
+        background: var(--bg-color);
+        width: 87%;
+        height: calc(100vh - 68rem);
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        transition: right 0.3s ease;
+    }
+
+    .header .navbar.active {
+        right: 0;
+        background: var(--bg-color);
+    }
+
+    .header .logo img {
+        width: 100%;
+        max-width: 10rem;
+        height: auto;
+    }    
+
+    .header .navbar a {
+        color: var(--text-color);
+        display: block;
+        margin: 0.4rem;
+        padding: .5rem;
+        font-size: 1.8rem;
+        margin-left: 2%;
+        border-bottom: 1px solid var(--text-color);
+    }
+
+    .header .navbar a:hover {
+        color: var(--blue-color);
+        border-bottom-color: var(--blue-color); 
+    }
+
+    .header #header-btn {
+        color: var(--text-color);
+        display: block;
+        margin: 0.4rem;
+        padding: .5rem;
+        font-size: 1.8rem;
+        background-color: var(--bg-color);
+        text-transform: lowercase;
+        margin-left: 2%;
+        border-bottom: none; 
+    }
+
+    .header #header-btn:first-letter {
+        text-transform: uppercase;
+    }
+
+    .header #header-btn:hover {
+        color: var(--blue-color);
+    }
+
+    .about::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 40%; 
+        background: url('/images/about.jpg') center/cover no-repeat; 
+    }
+
+    .about-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .about-content h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem; 
+        color: var(--main-color);
+    }
+    
+    .about-content p {
+        font-size: 1.4rem;
+        margin-bottom: 2rem; 
+        color: var(--text-color);
+    }
+    
+    .about-content ul {
+        list-style-type: none;
+        font-size: 1.4rem;
+        margin-bottom: 2rem; 
+        color: var(--text-color);
+    }
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    #menu-btn {
+        display: inline-block;
+        font-size: 2rem;
+    }
+
+    #menu-icon {
+        font-size: 2rem;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 70%; right: -100%;
+        background: var(--bg-color);
+        width: 100%;
+        height: calc(100vh - 80rem);
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        transition: right 0.3s ease;
+    }
+
+    .header .navbar.active {
+        right: 0;
+        background: var(--bg-color);
+    }
+
+    .header .logo img {
+        width: 100%;
+        max-width: 10rem;
+        margin-bottom: 2rem;
+        height: auto;
+    }    
+
+    .header .navbar a {
+        color: var(--text-color);
+        display: block;
+        margin: 0.4rem;
+        padding: .5rem;
+        font-size: 1.8rem;
+        margin-left: 2%;
+        border-bottom: 1px solid var(--text-color);
+    }
+
+    .header .navbar a:hover {
+        color: var(--blue-color);
+        border-bottom-color: var(--blue-color); 
+    }
+
+    .header #header-btn {
+        color: var(--text-color);
+        display: block;
+        margin: 0.4rem;
+        padding: .5rem;
+        font-size: 1.8rem;
+        background-color: var(--bg-color);
+        text-transform: lowercase;
+        margin-left: 2%;
+        border-bottom: none; 
+    }
+
+    .header #header-btn:first-letter {
+        text-transform: uppercase;
+    }
+
+    .header #header-btn:hover {
+        color: var(--blue-color);
+    }
+
+    .about::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 40%; 
+        background: url('/images/about.jpg') center/cover no-repeat; 
+    }
+
+    .about-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .about-content h2 {
+        font-size: 2.6rem;
+        margin-bottom: 1.5rem; 
+        color: var(--main-color);
+    }
+    
+    .about-content p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem; 
+        color: var(--text-color);
+    }
+    
+    .about-content ul {
+        list-style-type: none;
+        font-size: 1.5rem;
+        margin-bottom: 2rem; 
+        color: var(--text-color);
+    }
 }
