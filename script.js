@@ -16,3 +16,28 @@ menuBtn.onclick = () => {
 window.onscroll = () => {
   navbar.classList.remove('active');
 };
+
+//=== accordeon ===//
+document.addEventListener('DOMContentLoaded', function () {
+  var accordions = document.getElementsByClassName('accordion');
+
+  for (var i = 0; i < accordions.length; i++) {
+      accordions[i].addEventListener('click', function () {
+          this.classList.toggle('active');
+
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+          } else {
+              for (var j = 0; j < accordions.length; j++) {
+                  var otherPanel = accordions[j].nextElementSibling;
+                  if (otherPanel !== panel) {
+                      accordions[j].classList.remove('active');
+                      otherPanel.style.maxHeight = null;
+                  }
+              }
+              panel.style.maxHeight = panel.scrollHeight + 'px';
+          }
+      });
+  }
+});
