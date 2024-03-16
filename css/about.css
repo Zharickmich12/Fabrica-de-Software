@@ -67,7 +67,7 @@ section {
  
  .header .logo img {
      width: 100%;
-     max-width: 18rem;
+     max-width: 20rem;
      height: auto;
  }
  
@@ -962,6 +962,10 @@ footer {
         font-size: 50%;
     }
 
+    .header {
+        padding: 1rem 5%;
+     }
+
     #menu-btn {
         display: inline-block;
         font-size: 2rem;
@@ -1075,8 +1079,8 @@ footer {
     }
 
     .footer-section1 img {
-        width: 18rem;
-        height: 15rem;
+        width: 20rem;
+        height: 17rem;
         margin-bottom: 1rem;
     }
     

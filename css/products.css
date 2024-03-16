@@ -56,7 +56,7 @@ section {
     border-bottom: var(--blue-color);
     position: absolute; 
     top: 0; left: 0; right: 0;
-    background-color: var(--main-color);
+    background-color: var(--bg-color);
     z-index: 1000; 
  }
  
@@ -68,20 +68,20 @@ section {
  
  .header .logo img {
      width: 100%;
-     max-width: 18rem;
+     max-width: 20rem;
      height: auto;
  }
  
  .header .logo h2 {
      margin: 0 1rem;
      font-size: 2.3rem;
-     color: var(--white-color);
+     color: var(--text-color);
  }
  
  .header .navbar a{
      margin: 0 1rem;
      font-size: 1.6rem;
-     color: var(--white-color);
+     color: var(--text-color);
  }
  
  .header .navbar a:hover {
@@ -107,6 +107,7 @@ section {
      scale: 1.05;
      color: var(--text-color);
      background-color: var(--bg-color);
+     border: .1rem solid var(--blue-color);
  }
  
  #menu-btn {
@@ -120,10 +121,9 @@ section {
  }
 
  /*products*/
-.products {
+ .products {
     position: relative;
     background: var(--bg-color);
-
 }
 
 .products::before {
@@ -134,7 +134,6 @@ section {
     width: 100%;
     height: 7%; 
     background: var(--main-color); 
-    
 }
 
 .products-content {
@@ -169,7 +168,7 @@ section {
 .products-box p {
     font-size: 1.5rem;
     color: var(--text-color);
-    margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
  /*mas informacion*/
@@ -397,7 +396,7 @@ footer {
     .header .navbar {
         position: absolute;
         top: 66%; right: -100%;
-        background: var(--bg-color);
+        background: var(--blue-color);
         width: 83%;
         height: calc(100vh - 68rem);
         display: flex;
@@ -408,26 +407,26 @@ footer {
 
     .header .navbar.active {
         right: 0;
-        background: var(--bg-color);
+        background: var(--blue-color);
     }
 
     .header .navbar a {
-        color: var(--blue-color);
+        color: var(--white-color);
         display: block;
         margin: 0.4rem;
         padding: .5rem;
         font-size: 1.8rem;
         margin-left: 2%;
-        border-bottom: 1px solid var(--blue-color);
+        border-bottom: 1px solid var(--white-color);
     }
 
     .header #header-btn {
-        color: var(--blue-color);
+        color: var(--white-color);
         display: block;
         margin: 0.4rem;
         padding: .5rem;
         font-size: 1.8rem;
-        background-color: var(--bg-color);
+        background-color: var(--blue-color);
         text-transform: lowercase;
         margin-left: 2%;
         border-bottom: none; 
@@ -468,7 +467,7 @@ footer {
     .header .navbar {
         position: absolute;
         top: 66%; right: -100%;
-        background: var(--bg-color);
+        background: var(--blue-color);
         width: 83%;
         height: calc(100vh - 68rem);
         display: flex;
@@ -479,26 +478,26 @@ footer {
 
     .header .navbar.active {
         right: 0;
-        background: var(--bg-color);
+        background: var(--blue-color);
     }
 
     .header .navbar a {
-        color: var(--blue-color);
+        color: var(--white-color);
         display: block;
         margin: 0.4rem;
         padding: .5rem;
         font-size: 1.8rem;
         margin-left: 2%;
-        border-bottom: 1px solid var(--blue-color);
+        border-bottom: 1px solid var(--shadow-color);
     }
 
     .header #header-btn {
-        color: var(--blue-color);
+        color: var(--white-color);
         display: block;
         margin: 0.4rem;
         padding: .5rem;
         font-size: 1.8rem;
-        background-color: var(--bg-color);
+        background-color: var(--blue-color);
         text-transform: lowercase;
         margin-left: 2%;
         border-bottom: none; 
@@ -514,6 +513,7 @@ footer {
 }
 
 @media (max-width: 768px){
+
     #menu-btn {
         display: inline-block;
         font-size: 3rem;
@@ -526,7 +526,7 @@ footer {
     .header .navbar {
         position: absolute;
         top: 75%; right: -100%;
-        background: var(--bg-color);
+        background: var(--blue-color);
         width: 87%;
         height: calc(100vh - 68rem);
         display: flex;
@@ -537,7 +537,7 @@ footer {
 
     .header .navbar.active {
         right: 0;
-        background: var(--bg-color);
+        background: var(--blue-color);
     }
 
     .header .logo img {
@@ -547,27 +547,27 @@ footer {
     }    
 
     .header .navbar a {
-        color: var(--blue-color);
+        color: var(--white-color);
         display: block;
         margin: 0.4rem;
         padding: .5rem;
         font-size: 1.8rem;
         margin-left: 2%;
-        border-bottom: 1px solid var(--blue-color);
+        border-bottom: 1px solid var(--shadow-color);
     }
 
     .header .navbar a:hover {
-        color: var(--blue-color);
+        color: var(--white-color);
         border-bottom-color: var(--blue-color); 
     }
 
     .header #header-btn {
-        color: var(--blue-color);
+        color: var(--white-color);
         display: block;
         margin: 0.4rem;
         padding: .5rem;
         font-size: 1.8rem;
-        background-color: var(--bg-color);
+        background-color: var(--blue-color);
         text-transform: lowercase;
         margin-left: 2%;
         border-bottom: none; 
@@ -576,6 +576,20 @@ footer {
     .header #header-btn:first-letter {
         text-transform: uppercase;
     }
+
+    .products-box {
+        width: calc(100% - 20px);
+    }
+
+    .products-content {
+        margin-top: 10rem;
+    }
+
+    .products::before {
+        width: 100%;
+        height: 2.5%; 
+    }
+
 }
 
 @media (max-width:450px){
@@ -583,6 +597,10 @@ footer {
     html{
         font-size: 50%;
     }
+
+    .header {
+        padding: 1rem 5%;
+     }
 
     #menu-btn {
         display: inline-block;
@@ -603,11 +621,12 @@ footer {
         flex-direction: column;
         align-items: left;
         transition: right 0.3s ease;
+        border: 1px solid var(--blue-color);
     }
 
     .header .navbar.active {
         right: 0;
-        background: var(--bg-color);
+        background: var(--blue-color);
     }
 
     .header .logo img {
@@ -615,30 +634,29 @@ footer {
         max-width: 10rem;
         margin-bottom: 2rem;
         height: auto;
-    }    
+    }   
+    
+    .header .logo h2 {
+        color: var(--text-color);
+    }
 
     .header .navbar a {
-        color: var(--blue-color);
+        color: var(--white-color);
         display: block;
         margin: 0.4rem;
         padding: .5rem;
         font-size: 1.8rem;
         margin-left: 2%;
-        border-bottom: 1px solid var(--blue-color);
-    }
-
-    .header .navbar a:hover {
-        color: var(--blue-color);
-        border-bottom-color: var(--blue-color); 
+        border-bottom: 1px solid var(--shadow-color);
     }
 
     .header #header-btn {
-        color: var(--blue-color);
+        color: var(--white-color);
         display: block;
         margin: 0.4rem;
         padding: .5rem;
         font-size: 1.8rem;
-        background-color: var(--bg-color);
+        background-color: var(--blue-color);
         text-transform: lowercase;
         margin-left: 2%;
         border-bottom: none; 
@@ -648,9 +666,24 @@ footer {
         text-transform: uppercase;
     }
 
+    
+    .products-content {
+        margin-top: 12rem;
+    }
+
+    .products::before {
+        width: 100%;
+        height: 2%; 
+
+    }
+
+    .products-box {
+        width: calc(100% - 5px);
+    }
+
     .footer-section1 img {
-        width: 18rem;
-        height: 15rem;
+        width: 20rem;
+        height: 17rem;
         margin-bottom: 1rem;
     }
     
