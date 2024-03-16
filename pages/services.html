@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/services.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Fabrica de Software</title>
 </head>
@@ -39,15 +39,17 @@
     <!-- servicios-->
     <section class="services">     
         
-        <div class="services-titles">
+        <div class="titles">
            <h1>Servicios</h1>
            <h3>Proveemos un amplio rango de Servicios</h3>
            <p>Todo orientado al Desarrollo, Mantenimiento, Calidad y Operación de aplicaciones para negocios y empresas.</p>
         </div>
 
-        <h2 id="services-h2">¿En qué podemos ayudarle?</h2>
-        <p id="services-p1">Diseño, Desarrollo, Pruebas, Seguridad, Control de Calidad y Operación. Cubrimos todo el proceso de Desarrollo de Software con herramientas modernas de ingeniería.</p>
-            
+        <div class="services-titles">
+            <h2 class="heading">¿En qué podemos ayudarle?</h2>
+            <p class="info">Diseño, Desarrollo, Pruebas, Seguridad, Control de Calidad y Operación. Cubrimos todo el proceso de Desarrollo de Software con herramientas modernas de ingeniería.</p>
+        </div>
+        
         <div class="services-content-section">
             
             <div class="services-boxes">
@@ -108,43 +110,41 @@
     </section>
 
     <section class="info-services-content">
+        
         <!-- clientes -->
-        <div class="customers-container-services">
+        <div class="customers-container">
+                
+            <h2 class="heading">Nuestros Clientes</h2>
+            <p class="info">He aquí algunos de nuestros clientes</p>
             
-            <h2>Nuestros Clientes</h2>
-            <p>Esta es una lista breve de algunos clientes.</p>
-            
-            <table class="logos-table-services">
-                <tr>
-                  <td class="customers-logo-services">
+            <div class="logos-container">
+                  <div class="customers-logo">
                     <img src="/images/logo1.jpg" alt="">
-                  </td>
-                  <td class="customers-logo-services">
+                  </div>
+                  <div class="customers-logo">
                     <img src="/images/logo1.jpg" alt="">
-                  </td>
-                  <td class="customers-logo-services">
+                  </div>
+                  <div class="customers-logo">
                     <img src="/images/logo1.jpg" alt="">
-                  </td>
-                  <td class="customers-logo-services">
+                  </div>
+                  <div class="customers-logo">
                     <img src="/images/logo1.jpg" alt="">
-                  </td>
-                </tr>
-              </table>
+                  </div>
+              </div>
         </div>
 
-        <!-- mas información -->
-        <div class="info-container">
+         <!-- mas información -->
+         <div class="info-container">
             <div class="text-content">
-              <h2>¿Deseas iniciar algún proyecto de software?</h2>
-              <p>Sin importar donde estés, si tienes una idea de Software, ponte en contacto para hacerla realidad. Que no quede en idea!!!. Consulta sin ningún compromiso.</p>
+              <h2 class="heading-info">¿Deseas iniciar algún proyecto de software?</h2>
+              <p class="info-p">Sin importar donde estés, si tienes una idea de Software, ponte en contacto para hacerla realidad. Que no quede en idea!!!. Consulta sin ningún compromiso.</p>
             </div>
-            <a href="https://api.whatsapp.com/send/?phone=51903040776&text&type=phone_number&app_absent=0" target="_blank"><button type="button" class="btn-info">MAS INFORMACIÓN</button></a>
+            <a href="https://api.whatsapp.com/send/?phone=51903040776&text&type=phone_number&app_absent=0" target="_blank" id="info-btn">MAS INFORMACIÓN</a>
         </div>
     </section>
 
      <!-- footer -->
-
-     <footer>
+    <footer>
         <div class="footer-container">
             
             <div class="footer-section1">
@@ -201,7 +201,7 @@
         <div class="footer-divider"></div>
         
         <div class="footer-bottom">
-            <p id="p2">Copyright © 2024 Fabrica de Software | Powered by Fabrica de Software</p>
+            <p id="col">Copyright © 2024 Fabrica de Software | Powered by Fabrica de Software</p>
         </div>
     
     </footer>
