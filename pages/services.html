@@ -13,21 +13,27 @@
 <body>
     
     <!-- header -->
-    <header>
-        <img class="logo" src="/images/logo.png">
-        <h1 class="title">Fabrica de Software</h1>
-
-        <nav>
-            <ul>
-                <li><a href="/home.html">Inicio</a></li>
-                <li><a href="/pages/about.html">Acerca de Nosotros</a></li>
-                <li><a href="/pages/products.html">Productos</a></li>
-                <li><a href="/pages/services.html" class="active-nav">Servicios</a></li>
-                <li><a href="/pages/contact.html">Contactanos</a></li>
-            </ul>
+    <header class="header">
+        
+        <div class="logo">
+            <a href="/home.html"><img src="/images/logo.png" alt="logo"></a>
+            <a href="/home.html"><h2>Fabrica de software</h2></a>
+        </div>
+        
+        
+        <nav class="navbar"> 
+            <a href="/home.html">Inicio</a>
+            <a href="/pages/about.html">Acerca de Nosotros</a>
+            <a href="/pages/products.html">Productos</a>
+            <a href="/pages/services.html">Servicios</a>
+            <a href="/pages/contact.html">Contactanos</a>
+            <a href="https://api.whatsapp.com/send/?phone=51903040776&text&type=phone_number&app_absent=0" target="_blank" id="header-btn">PEDIR PRESUPUESTO</a>
         </nav>
 
-        <a href="https://api.whatsapp.com/send/?phone=51903040776&text&type=phone_number&app_absent=0" target="_blank"><button type="button" class="btn-heading">PEDIR PRESUPUESTO</button></a>
+        <div id="menu-btn">
+            <i class='bx bx-menu' id="menu-icon"></i>
+        </div>
+        
     </header>
 
     <!-- servicios-->
