@@ -6,28 +6,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/contact.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Fabrica de Software</title>
 </head>
 <body>
     
     <!-- header -->
-    <header>
-        <img class="logo" src="/images/logo.png">
-        <h1 class="title">Fabrica de Software</h1>
-
-        <nav>
-            <ul>
-                <li><a href="/home.html">Inicio</a></li>
-                <li><a href="/pages/about.html">Acerca de Nosotros</a></li>
-                <li><a href="/pages/products.html">Productos</a></li>
-                <li><a href="/pages/services.html">Servicios</a></li>
-                <li><a href="/pages/contact.html" class="active-nav">Contactanos</a></li>
-            </ul>
+    <header class="header">
+        
+        <div class="logo">
+            <a href="/home.html"><img src="/images/logo.png" alt="logo"></a>
+            <a href="/home.html"><h2>Fabrica de software</h2></a>
+        </div>
+        
+        
+        <nav class="navbar"> 
+            <a href="/home.html">Inicio</a>
+            <a href="/pages/about.html">Acerca de Nosotros</a>
+            <a href="/pages/products.html">Productos</a>
+            <a href="/pages/services.html">Servicios</a>
+            <a href="/pages/contact.html">Contactanos</a>
+            <a href="https://api.whatsapp.com/send/?phone=51903040776&text&type=phone_number&app_absent=0" target="_blank" id="header-btn">PEDIR PRESUPUESTO</a>
         </nav>
 
-        <a href="https://api.whatsapp.com/send/?phone=51903040776&text&type=phone_number&app_absent=0" target="_blank"><button type="button" class="btn-heading">PEDIR PRESUPUESTO</button></a>
+        <div id="menu-btn">
+            <i class='bx bx-menu' id="menu-icon"></i>
+        </div>
+        
     </header>
 
     <!-- contacto -->
@@ -76,14 +82,15 @@
         <!-- mas información -->
         <div class="info-container">
             <div class="text-content">
-              <h2>¿Deseas iniciar algún proyecto de software?</h2>
-              <p>Sin importar donde estés, si tienes una idea de Software, ponte en contacto para hacerla realidad. Que no quede en idea!!!. Consulta sin ningún compromiso.</p>
+              <h2 class="heading-info">¿Deseas iniciar algún proyecto de software?</h2>
+              <p class="info-p">Sin importar donde estés, si tienes una idea de Software, ponte en contacto para hacerla realidad. Que no quede en idea!!!. Consulta sin ningún compromiso.</p>
             </div>
-            <a href="https://api.whatsapp.com/send/?phone=51903040776&text&type=phone_number&app_absent=0" target="_blank"><button type="button" class="btn-info">MAS INFORMACIÓN</button></a>
+            <a href="https://api.whatsapp.com/send/?phone=51903040776&text&type=phone_number&app_absent=0" target="_blank" id="info-btn">MAS INFORMACIÓN</a>
         </div>
      
     </section>
 
+    <!-- footer -->
     <footer>
         <div class="footer-container">
             
@@ -109,9 +116,9 @@
                     <h2>Fab Soft</h2>
                     <ul>
                         <li><a href="./home.html">Inicio</a></li>
-                        <li><a href="./about.html">Acerca de</a></li>
-                        <li><a href="./services.html">Servicios</a></li>
-                        <li><a href="/pages/contact.html">Contacto</a></li>
+                        <li><a href="./pages/about.html">Acerca de</a></li>
+                        <li><a href="./pages/services.html">Servicios</a></li>
+                        <li><a href="./pages/contact.html">Contacto</a></li>
                         <li><a href="https://tienda.fabrica-software.com/"><i class='bx bx-check' ></i> Tienda</a></li>
                     </ul>
                 </div>
@@ -141,7 +148,7 @@
         <div class="footer-divider"></div>
         
         <div class="footer-bottom">
-            <p id="p2">Copyright © 2024 Fabrica de Software | Powered by Fabrica de Software</p>
+            <p id="col">Copyright © 2024 Fabrica de Software | Powered by Fabrica de Software</p>
         </div>
     
     </footer>
