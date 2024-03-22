@@ -173,7 +173,7 @@ section {
     width: 100%;
     margin-bottom: 8rem;
     margin-top: 10rem;
-    margin-left: 20rem;
+    margin-left: 15rem;
 }
 
 .column-contact {
@@ -184,7 +184,7 @@ section {
 .form-map {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 0;
+    gap: 6rem;
 }
 
 .column-contact h2 {
@@ -923,6 +923,14 @@ footer {
     .contact::before {
         width: 100%;
         height: 22%;  
+    }
+    
+    .contact-titles h3 {
+        font-size: 2.3rem;
+        font-weight: 700;
+        line-height: 1.3;
+        color: var(--white-color);
+        margin-bottom: 3rem;
     }
 
     .column-container {
