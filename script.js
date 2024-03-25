@@ -15,6 +15,7 @@ menuBtn.onclick = () => {
 
 window.onscroll = () => {
   navbar.classList.remove('active');
+  menuIcon.className = 'bx bx-menu';
 };
 
 //=== accordeon ===//
