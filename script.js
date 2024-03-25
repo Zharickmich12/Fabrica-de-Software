@@ -90,3 +90,13 @@ function googleTranslateElementInit(){
     'google_translate_element'
   );
 }
+
+//=== scroll reveal ===//
+ScrollReveal({ 
+  reset: true,
+  distance: '60px',
+  duration: 2000,
+  delay: 200
+});
+
+ScrollReveal().reveal('.home-content', '.heading', { origin: 'top' });
