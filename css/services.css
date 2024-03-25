@@ -118,6 +118,12 @@ section {
      padding: 0.5rem 1.5rem;
  }
 
+ #google_translate_element {
+    position: fixed;
+    top: 0px; 
+    right: 100px;
+}
+
  /*services*/
 .services {
     position: relative;
@@ -482,6 +488,12 @@ footer {
         padding: 2rem;
     }
 
+    #google_translate_element {
+        position: fixed;
+        top: 0px; 
+        right: 18px;
+    }
+
     .customers-container .logos-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
@@ -509,6 +521,12 @@ footer {
 
     section {
         padding: 2rem;
+    }
+
+    #google_translate_element {
+        position: absolute;
+        top: 0px; 
+        right: 150px;
     }
 
     #menu-btn {
@@ -597,6 +615,12 @@ footer {
         padding: 2rem;
     }
 
+    #google_translate_element {
+        position: absolute;
+        top: 0px; 
+        right: 150px;
+    }
+
     #menu-btn {
         display: inline-block;
         font-size: 3rem;
@@ -671,6 +695,12 @@ footer {
 }
 
 @media (max-width: 768px){
+
+    #google_translate_element {
+        position: absolute;
+        top: 0px; 
+        right: 150px;
+    }
 
     #menu-btn {
         display: inline-block;
@@ -773,6 +803,12 @@ footer {
     .header {
         padding: 1rem 5%;
      }
+
+     #google_translate_element {
+        position: absolute;
+        top: 45rem; 
+        right: 25rem;
+    }
 
     #menu-btn {
         display: inline-block;

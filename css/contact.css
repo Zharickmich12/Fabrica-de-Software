@@ -118,6 +118,12 @@ section {
     padding: 0.5rem 1.5rem;
 }
 
+#google_translate_element {
+    position: fixed;
+    top: 0px; 
+    right: 100px;
+}
+
 /*contact*/
 .contact {
     position: relative;
@@ -540,6 +546,12 @@ footer {
         padding: 2rem;
     }
 
+    #google_translate_element {
+        position: absolute;
+        top: 0px; 
+        right: 150px;
+    }
+
     #menu-btn {
         display: inline-block;
         font-size: 3.5rem;
@@ -645,6 +657,12 @@ footer {
         padding: 2rem;
     }
 
+    #google_translate_element {
+        position: absolute;
+        top: 0px; 
+        right: 150px;
+    }
+
     #menu-btn {
         display: inline-block;
         font-size: 3rem;
@@ -739,6 +757,12 @@ footer {
 }
 
 @media (max-width: 768px){
+
+    #google_translate_element {
+        position: absolute;
+        top: 0px; 
+        right: 150px;
+    }
 
     #menu-btn {
         display: inline-block;
@@ -851,6 +875,12 @@ footer {
 
     html{
         font-size: 50%;
+    }
+
+    #google_translate_element {
+        position: absolute;
+        top: 50rem; 
+        right: 25rem;
     }
 
     .header {
