@@ -118,6 +118,12 @@ section {
     padding: 0.5rem 1.5rem;
 }
 
+#google_translate_element {
+    position: fixed;
+    top: 0.5px; 
+    right: 100px;
+}
+
 /*seccion de inicio*/
 .home {
     min-height: 100vh;

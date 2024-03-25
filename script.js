@@ -82,3 +82,11 @@ document.addEventListener("DOMContentLoaded", function() {
   animateValue("contador-2", 0, 50, 2000); 
   animateValue("contador-3", 0, 100000, 3000); 
 });
+
+//===google translate===//
+function googleTranslateElementInit(){
+  new google.translate.TranslateElement(
+    {pageLanguage: 'es'},
+    'google_translate_element'
+  );
+}
