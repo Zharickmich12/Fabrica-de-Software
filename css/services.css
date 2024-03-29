@@ -968,3 +968,31 @@ footer {
     }
     
 }
+
+@media (max-width:360px){
+
+    #google_translate_element {
+        position: absolute;
+        top: 53rem; 
+        right: 18rem;
+   }
+
+   .header .navbar {
+       position: absolute;
+       top: 78%; right: -100%;
+       background: var(--bg-color);
+       width: 100%;
+       height: calc(100vh - 65rem);
+       display: flex;
+       flex-direction: column;
+       align-items: left;
+       transition: right 0.3s ease;
+   }
+ 
+   .footer-section2 {
+       display: flex;
+       flex-direction: column;
+       gap: 2rem;  
+   }
+   
+}
