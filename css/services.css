@@ -931,3 +931,40 @@ footer {
         color: var(--white-color);
     }
 }
+
+@media (max-width:412px){
+
+    .header .navbar {
+        position: absolute;
+        top: 70%; right: -100%;
+        background: var(--bg-color);
+        width: 100%;
+        height: calc(100vh - 87rem);
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        transition: right 0.3s ease;
+    }
+    
+    .titles h3 {
+        font-size: 2.3rem;
+        font-weight: 700;
+        line-height: .9;
+        color: var(--white-color);
+        margin-bottom: 3rem;
+    }
+
+    .footer-section2 {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;  
+    }
+    
+    #col {
+        display: flex;
+        justify-content: center;
+        font-size: 1.1rem;
+        color: var(--white-color);
+    }
+    
+}

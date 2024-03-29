@@ -1143,3 +1143,48 @@ footer {
         color: var(--white-color);
     }
 }
+
+@media (max-width:412px){
+
+    .header .navbar {
+        position: absolute;
+        top: 70%; right: -100%;
+        background: var(--bg-color);
+        width: 100%;
+        height: calc(100vh - 87rem);
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        transition: right 0.3s ease;
+    }
+
+    .about::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 15%; 
+        background: url('/images/about.jpg') center/cover no-repeat; 
+    }
+
+    #google_translate_element {
+        position: absolute;
+        top: 48rem; 
+        right: 25rem;
+    }
+    
+    .footer-section2 {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;  
+    }
+    
+    #col {
+        display: flex;
+        justify-content: center;
+        font-size: 1.1rem;
+        color: var(--white-color);
+    }
+    
+}
