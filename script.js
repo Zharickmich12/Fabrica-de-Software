@@ -139,7 +139,7 @@ submit.addEventListener('submit',(e)=>{
     }).then(
         message => {
             alert("¡Gracias por ponerte en contacto con nosotros! Tu mensaje ha sido enviado correctamente. Nos pondremos en contacto contigo lo antes posible.");
-            // Reseteamos los valores de los campos del formulario
+
             name.value = '';
             email.value = '';
             msg.value = '';
