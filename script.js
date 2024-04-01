@@ -114,3 +114,35 @@ function reveal() {
     }
   }
 }
+
+//=== form ===//
+const name = document.getElementById("name");
+const email = document.getElementById("email");
+const msg = document.getElementById("msg");
+
+const submit = document.getElementsByClassName("form-contact")[0];
+
+submit.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    console.log("clicked");
+
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "testingsoftwareprojects101@gmail.com",
+        Password : "BD6F943AF9E992B436D63731F489F69688A1",
+        To : 'cacardona5@gmail.com',
+        From : "testingsoftwareprojects101@gmail.com",
+        Subject : "Nueva respuesta del formulario de contacto",
+        Body : "<strong>Nombre:</strong> " + name.value + "<br/>" +
+        "<strong>Email:</strong> " + email.value + "<br/>" +
+        "<strong>Mensaje:</strong> " + msg.value
+    }).then(
+        message => {
+            alert("¡Gracias por ponerte en contacto con nosotros! Tu mensaje ha sido enviado correctamente. Nos pondremos en contacto contigo lo antes posible.");
+            // Reseteamos los valores de los campos del formulario
+            name.value = '';
+            email.value = '';
+            msg.value = '';
+        }
+    );
+});
