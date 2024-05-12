@@ -68,7 +68,7 @@ section {
  
  .header .logo img {
      width: 100%;
-     max-width: 20rem;
+     max-width: 15rem;
      height: auto;
  }
  
@@ -119,12 +119,6 @@ section {
      display: none;
      padding: 0.5rem 1.5rem;
  }
-
- #google_translate_element {
-    position: fixed;
-    top: 0px; 
-    right: 100px;
-}
 
  /*products*/
  .products {
@@ -262,7 +256,7 @@ footer {
 
 .footer-section1 img {
     width: 20rem;
-    height: 17rem;
+    height: 20rem;
     margin-bottom: 3rem;
 }
 
@@ -375,13 +369,6 @@ footer {
         font-size: 50%;
     }
 
-    #google_translate_element {
-        position: fixed;
-        top: 0px; 
-        right: 18px;
-    }
-
-
     .header {
         padding: 1rem 5rem;
     }
@@ -407,12 +394,6 @@ footer {
 
     section {
         padding: 2rem;
-    }
-
-    #google_translate_element {
-        position: absolute;
-        top: 0px; 
-        right: 150px;
     }
 
     #menu-btn {
@@ -490,12 +471,6 @@ footer {
         padding: 2rem;
     }
 
-    #google_translate_element {
-        position: absolute;
-        top: 0px; 
-        right: 150px;
-    }
-
     #menu-btn {
         display: inline-block;
         font-size: 3.5rem;
@@ -558,12 +533,6 @@ footer {
 }
 
 @media (max-width: 768px){
-
-    #google_translate_element {
-        position: absolute;
-        top: 0px; 
-        right: 150px;
-    }
 
     #menu-btn {
         display: inline-block;
@@ -657,12 +626,6 @@ footer {
         padding: 1rem 5%;
      }
 
-     #google_translate_element {
-        position: fixed;
-        top: 0; 
-        right: 15rem;
-    }
-
     #menu-btn {
         display: inline-block;
         font-size: 2rem;
@@ -746,7 +709,7 @@ footer {
     }
 
     .footer-section1 img {
-        width: 20rem;
+        width: 17rem;
         height: 17rem;
         margin-bottom: 1rem;
     }
@@ -788,12 +751,6 @@ footer {
         align-items: left;
         transition: right 0.3s ease;
     }
-
-    #google_translate_element {
-        position: fixed;
-        top: 0; 
-        right: 13rem;
-    }
     
     .footer-section2 {
         display: flex;
@@ -811,10 +768,6 @@ footer {
 }
 
 @media (max-width:360px){
-
-    #google_translate_element {
-        display: none;
-   }
 
    .header .navbar {
        position: absolute;

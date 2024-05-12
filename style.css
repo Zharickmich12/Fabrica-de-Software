@@ -67,7 +67,7 @@ section {
 
 .header .logo img {
     width: 100%;
-    max-width: 20rem;
+    max-width: 15rem;
     height: auto;
 }
 
@@ -116,12 +116,6 @@ section {
     background-color: var(--blue-color);
     display: none;
     padding: 0.5rem 1.5rem;
-}
-
-#google_translate_element {
-    position: fixed;
-    top: 0.5px; 
-    right: 100px;
 }
 
 /*seccion de inicio*/
@@ -455,7 +449,7 @@ footer {
 
 .footer-section1 img {
     width: 20rem;
-    height: 17rem;
+    height: 20rem;
     margin-bottom: 3rem;
 }
 
@@ -628,12 +622,6 @@ footer {
         padding: 2rem;
     }
 
-    #google_translate_element {
-        position: fixed;
-        top: 0px; 
-        right: 18px;
-    }
-
     .services .box-container {
         margin-left: 10rem;
         margin-right: 10rem;
@@ -699,12 +687,6 @@ footer {
 
     section {
         padding: 2rem;
-    }
-
-    #google_translate_element {
-        position: absolute;
-        top: 0px; 
-        right: 150px;
     }
 
     #menu-btn {
@@ -822,12 +804,6 @@ footer {
         padding: 2rem;
     }
 
-    #google_translate_element {
-        position: absolute;
-        top: 0px; 
-        right: 150px;
-    }
-
     #menu-btn {
         display: inline-block;
         font-size: 3rem;
@@ -926,11 +902,6 @@ footer {
 
 @media (max-width: 768px){
 
-    #google_translate_element {
-        position: absolute;
-        top: 0px; 
-        right: 150px;
-    }
 
     #menu-btn {
         display: inline-block;
@@ -1051,12 +1022,6 @@ footer {
         padding: 1rem 5%;
      }
 
-     #google_translate_element {
-        position: absolute;
-        top: 68rem; 
-        right: 25rem;
-    }
-
     #menu-btn {
         display: inline-block;
         font-size: 2rem;
@@ -1156,7 +1121,7 @@ footer {
     }
     
     .footer-section1 img {
-        width: 20rem;
+        width: 17rem;
         height: 17rem;
         margin-bottom: 1rem;
     }
@@ -1216,12 +1181,6 @@ footer {
 }
 
 @media (max-width:360px){
-
-     #google_translate_element {
-        position: absolute;
-        top: 62rem; 
-        right: 17rem;
-    }
 
     .home {
         min-height: 75vh;
